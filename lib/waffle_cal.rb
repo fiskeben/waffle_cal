@@ -1,6 +1,3 @@
 require 'waffle_cal/calendar'
 require 'waffle_cal/event'
-
-module WaffleCal
-
-end
+require 'waffle_cal/prod_id'

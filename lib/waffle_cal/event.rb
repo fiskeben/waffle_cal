@@ -9,14 +9,15 @@ module WaffleCal
 		end
 
 		def to_s
-			output += start_event
+			output = []
+			output << start_event
       		output << date_start_str
       		output << date_end_str
       		output << uid_str
 			output << summary_str if summary
 			output << location_str if location
 			output << description_str if description
-			output += end_event
+			output << end_event
 			output.join("\r\n")
 		end
 
@@ -47,11 +48,11 @@ module WaffleCal
 		end
 
 		def start_event
-			["BEGIN:VEVENT"]
+			"BEGIN:VEVENT"
 		end
 
 		def end_event
-			["END:VEVENT"]
+			"END:VEVENT"
 		end
 	end
 end

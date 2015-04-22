@@ -38,7 +38,7 @@ module WaffleCal
 			output << "BEGIN:VCALENDAR"
 		    output << "METHOD:PUBLISH"
 			output << "VERSION:2.0"
-			output << @prod_id
+			output << "PRODID:-#{@prod_id.to_s}"
 			output
 		end
 
