@@ -9,6 +9,10 @@ module WaffleCal
 			@language = attrs[:language].upcase if attrs.has_key?(:language)
 		end
 
+		def self.create(entity_name, product_name, language)
+			ProdId.new({entity_name: entity_name, product_name: product_name, language: language})
+		end
+
 		def to_s
 			if complete?
 				"//#{@entity_name}//#{@product_name}//#{@language}"

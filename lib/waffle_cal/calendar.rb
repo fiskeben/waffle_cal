@@ -36,8 +36,8 @@ module WaffleCal
 		def start_calendar
 			output = []
 			output << "BEGIN:VCALENDAR"
-		    output << "METHOD:PUBLISH"
 			output << "VERSION:2.0"
+		    output << "METHOD:PUBLISH"
 			output << "PRODID:-#{@prod_id.to_s}"
 			output
 		end
