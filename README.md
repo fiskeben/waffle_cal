@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/waffle_cal.svg)](http://badge.fury.io/rb/waffle_cal)
+
 # WaffleCal
 A simple iCal/vCal generator.
 
